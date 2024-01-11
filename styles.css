@@ -56,15 +56,11 @@ body {
     z-index: 2;
     margin-top: 50px;
     
-    
-    
-
 }
 
 .tvButtons {
     grid-area: 1/1;
     z-index: 5;
-    
     
 }
 
@@ -92,7 +88,7 @@ button{
  
     cursor: pointer;
     margin-top: 640px;
-    
+    margin-left: 30px;
 
 }
 
@@ -127,22 +123,25 @@ button{
     }
 
     .prevButton {
-        margin-top: 480px;
-        margin-left: 80px;
-        padding: 0;
+        width: 65px;
+        margin-top: 475px;
+        margin-left: 10px;
+        padding-right: 0;
         
        
     }
 
     .nextButton {
-        margin-top: 480px;
-        margin-right: 25px;
-       
+        width: 65px;
+        margin-top: 475px;
+        padding-left: 0;
+        
     }
 
     .powerButton {
-        margin-top: 480px;
-        margin-right: 50px;
+        margin-top: 475px;
+       margin-left: 0;
+        width: 60px;
         padding: 0;
         
 
@@ -187,20 +186,23 @@ button{
     }
     
     .prevButton{
-        margin-bottom: 165px;
+        margin-top: 320px;
         width: 40px;
-        margin-left: 50px;
+        height: 30px;
+        margin-left: 6px;
     }
 
     .nextButton {
-        margin-bottom: 165px;
+        margin-top: 320px;
         width: 40px;
-        margin-left: 20px;
+        height: 30px;
+        margin-left: -10px;
     }
 
     .powerButton {
-        margin-bottom: 165px;
+        margin-top: 320px;
         width: 40px;
+        height: 30px;
         margin-right: 0px;
 
 
