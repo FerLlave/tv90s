@@ -47,10 +47,10 @@ function onYouTubeIframeAPIReady() {
       isVideoPlaying = true;
       videoScreen.style.display = "none";
 
-      document.getElementById('screenGlitch').style.display='block';
+      document.getElementById('screenGlitch').style.opacity='100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },1500);
+      },2000);
     }
 
     function pauseVideo(){
@@ -69,29 +69,34 @@ function onYouTubeIframeAPIReady() {
    
 
     function playNextVideo(){
-    if (isVideoPlaying=true){
+    if (isVideoPlaying === true){
       player.nextVideo();
-      document.getElementById('screenGlitch').style.display='block';
+      
+      document.getElementById('screenGlitch').style.opacity = '100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },1500);
-    }else playNextVideo.disable=true;
+      },2000);
+
+    } else {
+        
+        playNextVideo.disable=true;
     
     
+      }
     }
  
     function playPreviousVideo(){
-    if (isVideoPlaying=true){
+    if (isVideoPlaying === true){
       player.previousVideo();
 
-      document.getElementById('screenGlitch').style.display='block';
+      document.getElementById('screenGlitch').style.opacity='100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },1500);
-    }else playPreviousVideo.disable=true;  
+      },2000);
+    }else {playPreviousVideo.disable=true;  
     
     }
-
+  }
 
 
     
