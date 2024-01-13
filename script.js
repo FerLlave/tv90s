@@ -50,7 +50,7 @@ function onYouTubeIframeAPIReady() {
       document.getElementById('screenGlitch').style.opacity='100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },2000);
+      },1100);
     }
 
     function pauseVideo(){
@@ -75,7 +75,7 @@ function onYouTubeIframeAPIReady() {
       document.getElementById('screenGlitch').style.opacity = '100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },2000);
+      },1100);
 
     } else {
         
@@ -92,7 +92,7 @@ function onYouTubeIframeAPIReady() {
       document.getElementById('screenGlitch').style.opacity='100';
       setTimeout(function(){
         document.getElementById('screenGlitch').style.opacity = '0';
-      },2000);
+      },1100);
     }else {playPreviousVideo.disable=true;  
     
     }
