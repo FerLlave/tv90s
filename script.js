@@ -12,6 +12,7 @@ function onYouTubeIframeAPIReady() {
     width: '640',
     
     playerVars: {
+      "disablekb":1,
       'listType': "playlist",
       "list": "PLsGH4IgLsAlg45rmFJk5O52fyIaOUIb7E",
       "rel": 0,
@@ -77,6 +78,7 @@ function onYouTubeIframeAPIReady() {
         document.getElementById('screenGlitch').style.opacity = '0';
       },1100);
 
+         
     } else {
         
         playNextVideo.disable=true;
