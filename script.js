@@ -20,6 +20,7 @@ function onYouTubeIframeAPIReady() {
       'autohide':1,
       'controls' : 0,
       'showinfo':0,
+      'loop':1,
       
     },
     
@@ -44,7 +45,9 @@ function onYouTubeIframeAPIReady() {
     }
 
     function playVideo(){
-      player.playVideo();
+      
+      player.setShuffle(true); 
+      player.playVideoAt(1);
       isVideoPlaying = true;
       videoScreen.style.display = "none";
 
@@ -72,6 +75,7 @@ function onYouTubeIframeAPIReady() {
     function playNextVideo(){
     if (isVideoPlaying === true){
       player.nextVideo();
+      player.setShuffle(true); 
       
       document.getElementById('screenGlitch').style.opacity = '100';
       setTimeout(function(){
@@ -90,6 +94,7 @@ function onYouTubeIframeAPIReady() {
     function playPreviousVideo(){
     if (isVideoPlaying === true){
       player.previousVideo();
+      player.setShuffle(true); 
 
       document.getElementById('screenGlitch').style.opacity='100';
       setTimeout(function(){
