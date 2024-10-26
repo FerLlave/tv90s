@@ -109,7 +109,7 @@ button {
     place-content: center;
 }
 
-@media screen and (max-width:790px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
     .tv img {
 
         width: 568px;
