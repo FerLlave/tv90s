@@ -1,266 +1,232 @@
 body {
-
     display: grid;
     place-content: center;
-    background: linear-gradient(178deg, #e19090, #f6f28e, #eda8e5, #a8d5ed, #e19090);
+    background: linear-gradient(
+      178deg,
+      #e19090,
+      #f6f28e,
+      #eda8e5,
+      #a8d5ed,
+      #e19090
+    );
     background-size: 800% 800%;
     animation: AnimationName 55s ease infinite;
-}
-
-@keyframes AnimationName {
+  }
+  
+  @keyframes AnimationName {
     0% {
-        background-position: 46% 0%
+      background-position: 46% 0%;
     }
-
+  
     50% {
-        background-position: 55% 100%
+      background-position: 55% 100%;
     }
-
+  
     100% {
-        background-position: 46% 0%
+      background-position: 46% 0%;
     }
-
-}
-
-.tvContainer {
+  }
+  
+  .tvContainer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     place-items: center;
-
-}
-
-.tv {
+  }
+  
+  .tv {
     grid-area: 1/1;
     z-index: 6;
-}
-
-.screenOff {
+  }
+  
+  .screenOff {
     grid-area: 1/1;
     z-index: 5;
     margin-top: 50px;
-
-}
-
-.player {
+  }
+  
+  .player {
     grid-area: 1/1;
     height: 580px;
     width: 650px;
     background-color: rgb(0, 0, 0);
     z-index: 1;
-
-}
-
-.cinemaBarUp {
+  }
+  
+  .cinemaBarUp {
     display: none;
-
-}
-
-.cinemaBarDown {
+  }
+  
+  .cinemaBarDown {
     display: none;
-
-}
-
-.screenGlitch {
+  }
+  
+  .screenGlitch {
     grid-area: 1/1;
     z-index: 4;
     margin-top: 50px;
     display: none;
-
-}
-
-.tvButtons {
+  }
+  
+  .tvButtons {
     grid-area: 1/1;
     z-index: 7;
-
-
-}
-
-button {
-
+  }
+  
+  button {
     background-color: transparent;
     border-color: transparent;
-}
-
-.prevButton {
-
+  }
+  
+  .prevButton {
     cursor: pointer;
     margin-top: 640px;
-
-}
-
-.nextButton {
-
+  }
+  
+  .nextButton {
     cursor: pointer;
     margin-top: 640px;
-
-}
-
-.powerButton {
-
+  }
+  
+  .powerButton {
     cursor: pointer;
     margin-top: 640px;
     margin-left: 30px;
-
-}
-
-.footer {
+  }
+  
+  .footer {
     display: flex;
     place-content: center;
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .tv img {
-
-        width: 568px;
-        height: 610px;
+      width: 568px;
+      height: 610px;
     }
-
+  
     .screenOff img {
-        width: 480px;
-        height: 410px;
+      width: 480px;
+      height: 410px;
     }
-
+  
     .screenGlitch img {
-        z-index: 3;
-        width: 480px;
-        height: 410px;
-
+      z-index: 3;
+      width: 480px;
+      height: 410px;
     }
-
+  
     .player {
-        width: 535px;
-        height: 438px;
-
+      width: 535px;
+      height: 438px;
     }
-
-
+  
     .cinemaBarUp {
-        display: grid;
-        grid-area: 1/1;
-        z-index: 2;
-
+      display: grid;
+      grid-area: 1/1;
+      z-index: 2;
     }
-
+  
     .upCinemaBar {
-        width: 526px;
-        height: 50px;
-        margin-left: 18px;
-        margin-bottom: 347px;
+      width: 526px;
+      height: 50px;
+      margin-left: 18px;
+      margin-bottom: 347px;
     }
-
+  
     .cinemaBarDown {
-        display: none;
+      display: none;
     }
-
+  
     .prevButton {
-        width: 65px;
-        margin-top: 475px;
-        margin-left: 10px;
-        padding-right: 0;
-
-
+      width: 65px;
+      margin-top: 475px;
+      margin-left: 10px;
+      padding-right: 0;
     }
-
+  
     .nextButton {
-        width: 65px;
-        margin-top: 475px;
-        padding-left: 0;
-
+      width: 65px;
+      margin-top: 475px;
+      padding-left: 0;
     }
-
+  
     .powerButton {
-        margin-top: 475px;
-        margin-left: 0;
-        width: 60px;
-        padding: 0;
-
-
-
+      margin-top: 475px;
+      margin-left: 0;
+      width: 60px;
+      padding: 0;
     }
-
-}
-
-@media screen and (max-width:480px) {
-
+  }
+  
+  @media screen and (max-width: 480px) {
     .tv img {
-        width: 358px;
-        height: 400px;
-
+      width: 358px;
+      height: 400px;
     }
-
+  
     .screenGlitch img {
-        width: 300px;
-        height: 275px;
-
+      width: 300px;
+      height: 275px;
     }
-
+  
     .screenOff img {
-        width: 300px;
-        height: 275px;
+      width: 300px;
+      height: 275px;
     }
-
+  
     .player {
-        width: 335px;
-        height: 238px;
-
+      width: 335px;
+      height: 238px;
     }
-
-
+    .cinemaBarUp {
+      display: grid;
+      grid-area: 1/1;
+      z-index: 3;
+    }
+  
     .upCinemaBar {
-        width: 335px;
-        height: 56px;
-        margin-left: -163px;
-        margin-top: -121px;
-        margin-bottom: auto;
-        position: absolute;
-
-
+      width: 335px;
+      height: 56px;
+      margin-left: -163px;
+      margin-top: -121px;
+      margin-bottom: auto;
+      position: absolute;
     }
-    .cinemaBarDown{
-        grid-area: 1/1;
-        z-index: 3;
-        display: grid;
-
+    .cinemaBarDown {
+      grid-area: 1/1;
+      z-index: 3;
+      display: grid;
     }
     .downCinemaBar {
-        width: 335px;
-        margin-top: 194px;
-
-
-
+      width: 335px;
+      margin-top: 194px;
     }
-
-
+  
     .tvButtons {
-        grid-area: 1/1;
-        display: flex;
-
+      grid-area: 1/1;
+      display: flex;
     }
-
+  
     .prevButton {
-        margin-top: 320px;
-        width: 40px;
-        height: 30px;
-        margin-left: 6px;
+      margin-top: 320px;
+      width: 40px;
+      height: 30px;
+      margin-left: 6px;
     }
-
+  
     .nextButton {
-        margin-top: 320px;
-        width: 40px;
-        height: 30px;
-        margin-left: -10px;
+      margin-top: 320px;
+      width: 40px;
+      height: 30px;
+      margin-left: -10px;
     }
-
+  
     .powerButton {
-        margin-top: 320px;
-        width: 40px;
-        height: 30px;
-        margin-right: 0px;
-
-
+      margin-top: 320px;
+      width: 40px;
+      height: 30px;
+      margin-right: 0px;
     }
-
-
-
-}
+  }
+  
