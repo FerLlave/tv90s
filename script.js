@@ -21,6 +21,7 @@ function onYouTubeIframeAPIReady() {
       controls: 0,
       showinfo: 0,
       loop: 1,
+      origin: window.location.origin,
     },
   });
 }
